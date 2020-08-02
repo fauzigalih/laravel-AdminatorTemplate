@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     {!! HTML::favicon('static/images/logo.png') !!}
-    <title>@yield('title')</title>
+    <title>@yield('title') - {{ config('app.name') }}</title>
     {!! HTML::style('css/custom.css') !!}
     {!! HTML::style('css/style.css') !!}
 </head>
@@ -26,7 +26,7 @@
                 <div class="sidebar-logo">
                     <div class="peers ai-c fxw-nw">
                         <div class="peer peer-greed">
-                            <a class="sidebar-link td-n" href="">
+                            <a class="sidebar-link td-n" href="/">
                                 <div class="peers ai-c fxw-nw">
                                     <div class="peer">
                                         <div class="logo">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <ul class="sidebar-menu scrollable pos-r">
-                    <li class="nav-item mT-30 actived"><a class="sidebar-link" href=""><span class="icon-holder"><i class="c-blue-500 ti-home"></i> </span><span class="title">Dashboard</span></a></li>
+                    <li class="nav-item mT-30 actived"><a class="sidebar-link" href="/"><span class="icon-holder"><i class="c-blue-500 ti-home"></i> </span><span class="title">Dashboard</span></a></li>
                     <li class="nav-item"><a class="sidebar-link" href="email"><span class="icon-holder"><i class="c-brown-500 ti-email"></i> </span><span class="title">Email</span></a></li>
                     <li class="nav-item"><a class="sidebar-link" href="compose"><span class="icon-holder"><i class="c-blue-500 ti-share"></i> </span><span class="title">Compose</span></a></li>
                     <li class="nav-item"><a class="sidebar-link" href="calendar"><span class="icon-holder"><i class="c-deep-orange-500 ti-calendar"></i> </span><span class="title">Calendar</span></a></li>
@@ -115,9 +115,9 @@
                                 <li>
                                     <ul class="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
                                         <li>
-                                            <a href="" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="/" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
-                                                    <img class="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                                                    {{ HTML::image('https://randomuser.me/api/portraits/men/1.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <span>
@@ -129,9 +129,9 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="/" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
-                                                    <img class="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                                                    {{ HTML::image('https://randomuser.me/api/portraits/men/2.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <span>
@@ -143,9 +143,9 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="/" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
-                                                    <img class="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+                                                    {{ HTML::image('https://randomuser.me/api/portraits/men/3.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <span>
@@ -158,7 +158,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="pX-20 pY-15 ta-c bdT"><span><a href="" class="c-grey-600 cH-blue fsz-sm td-n">View All Notifications <i class="ti-angle-right fsz-xs mL-10"></i></a></span></li>
+                                <li class="pX-20 pY-15 ta-c bdT"><span><a href="/" class="c-grey-600 cH-blue fsz-sm td-n">View All Notifications <i class="ti-angle-right fsz-xs mL-10"></i></a></span></li>
                             </ul>
                         </li>
                         <li class="notifications dropdown">
@@ -168,9 +168,9 @@
                                 <li>
                                     <ul class="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
                                         <li>
-                                            <a href="" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="email" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
-                                                    <img class="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                                                    {{ HTML::image('https://randomuser.me/api/portraits/men/1.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <div>
@@ -190,9 +190,9 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="email" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
-                                                    <img class="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                                                    {{ HTML::image('https://randomuser.me/api/portraits/men/2.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <div>
@@ -212,9 +212,9 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="email" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
-                                                    <img class="w-3r bdrs-50p" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+                                                    {{ HTML::image('https://randomuser.me/api/portraits/men/3.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <div>
@@ -240,15 +240,17 @@
                         </li>
                         <li class="dropdown">
                             <a href="" class="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
-                                <div class="peer mR-10"><img class="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/10.jpg" alt=""></div>
+                                <div class="peer mR-10">
+                                    {{ HTML::image('https://randomuser.me/api/portraits/men/10.jpg', '...', ['class' => 'w-2r bdrs-50p']) }}
+                                </div>
                                 <div class="peer"><span class="fsz-sm c-grey-900">John Doe</span></div>
                             </a>
                             <ul class="dropdown-menu fsz-sm">
-                                <li><a href="" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-settings mR-10"></i> <span>Setting</span></a></li>
-                                <li><a href="" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-user mR-10"></i> <span>Profile</span></a></li>
+                                <li><a href="/" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-settings mR-10"></i> <span>Setting</span></a></li>
+                                <li><a href="/" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-user mR-10"></i> <span>Profile</span></a></li>
                                 <li><a href="email" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-email mR-10"></i> <span>Messages</span></a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-power-off mR-10"></i> <span>Logout</span></a></li>
+                                <li><a href="/" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-power-off mR-10"></i> <span>Logout</span></a></li>
                             </ul>
                         </li>
                     </ul>
