@@ -18,65 +18,65 @@ Route::get('/', function () {
 });
 
 Route::get('/email', function() {
-    return view('email');
+    return view('pages.email');
 });
 
 Route::get('/compose', function() {
-    return view('compose');
+    return view('pages.compose');
 });
 
 Route::get('/calendar', function() {
-    return view('calendar');
+    return view('pages.calendar');
 });
 
 Route::get('/chat', function() {
-    return view('chat');
+    return view('pages.chat');
 });
 
 Route::get('/charts', function() {
-    return view('charts');
+    return view('pages.charts');
 });
 
 Route::get('/forms', function() {
-    return view('forms');
+    return view('pages.forms');
 });
 
 Route::get('/ui', function() {
-    return view('ui');
+    return view('pages.ui');
 });
 
 Route::get('/basic-table', function() {
-    return view('basic-table');
+    return view('pages.basic-table');
 });
 
 Route::get('/data-table', function() {
-    return view('data-table');
+    return view('pages.data-table');
 });
 
 Route::get('/google-maps', function() {
-    return view('google-maps');
+    return view('pages.google-maps');
 });
 
 Route::get('/vector-maps', function() {
-    return view('vector-maps');
+    return view('pages.vector-maps');
 });
 
 Route::get('/blank', function() {
-    return view('blank');
+    return view('pages.blank');
 });
 
 Route::get('/404', function() {
-    return view('404');
+    return view('pages.404');
 });
 
 Route::get('/500', function() {
-    return view('500');
+    return view('pages.500');
 });
 
 Route::get('/signin', function() {
-    return view('signin');
+    return view('pages.signin');
 });
 
 Route::get('/signup', function() {
-    return view('signup');
+    return view('pages.signup');
 });
