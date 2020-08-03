@@ -26,7 +26,7 @@
                 <div class="sidebar-logo">
                     <div class="peers ai-c fxw-nw">
                         <div class="peer peer-greed">
-                            <a class="sidebar-link td-n" href="/">
+                            <a class="sidebar-link td-n" href="{{ url('/') }}">
                                 <div class="peers ai-c fxw-nw">
                                     <div class="peer">
                                         <div class="logo">
@@ -45,42 +45,42 @@
                     </div>
                 </div>
                 <ul class="sidebar-menu scrollable pos-r">
-                    <li class="nav-item mT-30 actived"><a class="sidebar-link" href="/"><span class="icon-holder"><i class="c-blue-500 ti-home"></i> </span><span class="title">Dashboard</span></a></li>
-                    <li class="nav-item"><a class="sidebar-link" href="email"><span class="icon-holder"><i class="c-brown-500 ti-email"></i> </span><span class="title">Email</span></a></li>
-                    <li class="nav-item"><a class="sidebar-link" href="compose"><span class="icon-holder"><i class="c-blue-500 ti-share"></i> </span><span class="title">Compose</span></a></li>
-                    <li class="nav-item"><a class="sidebar-link" href="calendar"><span class="icon-holder"><i class="c-deep-orange-500 ti-calendar"></i> </span><span class="title">Calendar</span></a></li>
-                    <li class="nav-item"><a class="sidebar-link" href="chat"><span class="icon-holder"><i class="c-deep-purple-500 ti-comment-alt"></i> </span><span class="title">Chat</span></a></li>
+                    <li class="nav-item mT-30 actived"><a class="sidebar-link" href="{{ url('/') }}"><span class="icon-holder"><i class="c-blue-500 ti-home"></i> </span><span class="title">Dashboard</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="{{ url('email') }}"><span class="icon-holder"><i class="c-brown-500 ti-email"></i> </span><span class="title">Email</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="{{ url('compose') }}"><span class="icon-holder"><i class="c-blue-500 ti-share"></i> </span><span class="title">Compose</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="{{ url('calendar') }}"><span class="icon-holder"><i class="c-deep-orange-500 ti-calendar"></i> </span><span class="title">Calendar</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="{{ url('chat') }}"><span class="icon-holder"><i class="c-deep-purple-500 ti-comment-alt"></i> </span><span class="title">Chat</span></a></li>
                     <li class="nav-item">
-                        <a class="sidebar-link" href="charts"><span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span><span class="title">Charts</span></a>
+                        <a class="sidebar-link" href="{{ url('charts') }}"><span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span><span class="title">Charts</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="sidebar-link" href="forms"><span class="icon-holder"><i class="c-light-blue-500 ti-pencil"></i> </span><span class="title">Forms</span></a>
+                        <a class="sidebar-link" href="{{ url('forms') }}"><span class="icon-holder"><i class="c-light-blue-500 ti-pencil"></i> </span><span class="title">Forms</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="sidebar-link" href="ui"><span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span><span class="title">UI Elements</span></a>
+                        <a class="sidebar-link" href="{{ url('ui') }}"><span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span><span class="title">UI Elements</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle" href="javascript:void(0);"><span class="icon-holder"><i class="c-orange-500 ti-layout-list-thumb"></i> </span><span class="title">Tables</span> <span class="arrow"><i class="ti-angle-right"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a class="sidebar-link" href="basic-table">Basic Table</a></li>
-                            <li><a class="sidebar-link" href="data-table">Data Table</a></li>
+                            <li><a class="sidebar-link" href="{{ url('basic-table') }}">Basic Table</a></li>
+                            <li><a class="sidebar-link" href="{{ url('data-table') }}">Data Table</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle" href="javascript:void(0);"><span class="icon-holder"><i class="c-purple-500 ti-map"></i> </span><span class="title">Maps</span> <span class="arrow"><i class="ti-angle-right"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="google-maps">Google Map</a></li>
-                            <li><a href="vector-maps">Vector Map</a></li>
+                            <li><a href="{{ url('google-maps') }}">Google Map</a></li>
+                            <li><a href="{{ url('vector-maps') }}">Vector Map</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle" href="javascript:void(0);"><span class="icon-holder"><i class="c-red-500 ti-files"></i> </span><span class="title">Pages</span> <span class="arrow"><i class="ti-angle-right"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a class="sidebar-link" href="blank">Blank</a></li>
-                            <li><a class="sidebar-link" href="404">404</a></li>
-                            <li><a class="sidebar-link" href="500">500</a></li>
-                            <li><a class="sidebar-link" href="signin">Sign In</a></li>
-                            <li><a class="sidebar-link" href="signup">Sign Up</a></li>
+                            <li><a class="sidebar-link" href="{{ url('blank') }}">Blank</a></li>
+                            <li><a class="sidebar-link" href="{{ url('404') }}">404</a></li>
+                            <li><a class="sidebar-link" href="{{ url('500') }}">500</a></li>
+                            <li><a class="sidebar-link" href="{{ url('signin') }}">Sign In</a></li>
+                            <li><a class="sidebar-link" href="{{ url('signup') }}">Sign Up</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -115,7 +115,7 @@
                                 <li>
                                     <ul class="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
                                         <li>
-                                            <a href="/" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="{{ url('/') }}" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
                                                     {{ HTML::image('https://randomuser.me/api/portraits/men/1.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
@@ -129,7 +129,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="{{ url('/') }}" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
                                                     {{ HTML::image('https://randomuser.me/api/portraits/men/2.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
@@ -143,7 +143,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="{{ url('/') }}" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
                                                     {{ HTML::image('https://randomuser.me/api/portraits/men/3.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
@@ -158,7 +158,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="pX-20 pY-15 ta-c bdT"><span><a href="/" class="c-grey-600 cH-blue fsz-sm td-n">View All Notifications <i class="ti-angle-right fsz-xs mL-10"></i></a></span></li>
+                                <li class="pX-20 pY-15 ta-c bdT"><span><a href="{{ url('/') }}" class="c-grey-600 cH-blue fsz-sm td-n">View All Notifications <i class="ti-angle-right fsz-xs mL-10"></i></a></span></li>
                             </ul>
                         </li>
                         <li class="notifications dropdown">
@@ -168,7 +168,7 @@
                                 <li>
                                     <ul class="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
                                         <li>
-                                            <a href="email" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="{{ url('email') }}" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
                                                     {{ HTML::image('https://randomuser.me/api/portraits/men/1.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
@@ -190,7 +190,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="email" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="{{ url('email') }}" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
                                                     {{ HTML::image('https://randomuser.me/api/portraits/men/2.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
@@ -212,7 +212,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="email" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                                            <a href="{{ url('email') }}" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
                                                 <div class="peer mR-15">
                                                     {{ HTML::image('https://randomuser.me/api/portraits/men/3.jpg', '...', ['class' => 'w-3r bdrs-50p']) }}
                                                 </div>
@@ -235,7 +235,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="pX-20 pY-15 ta-c bdT"><span><a href="email" class="c-grey-600 cH-blue fsz-sm td-n">View All Email <i class="fs-xs ti-angle-right mL-10"></i></a></span></li>
+                                <li class="pX-20 pY-15 ta-c bdT"><span><a href="{{ url('email') }}" class="c-grey-600 cH-blue fsz-sm td-n">View All Email <i class="fs-xs ti-angle-right mL-10"></i></a></span></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -246,11 +246,11 @@
                                 <div class="peer"><span class="fsz-sm c-grey-900">John Doe</span></div>
                             </a>
                             <ul class="dropdown-menu fsz-sm">
-                                <li><a href="/" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-settings mR-10"></i> <span>Setting</span></a></li>
-                                <li><a href="/" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-user mR-10"></i> <span>Profile</span></a></li>
-                                <li><a href="email" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-email mR-10"></i> <span>Messages</span></a></li>
+                                <li><a href="{{ url('/') }}" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-settings mR-10"></i> <span>Setting</span></a></li>
+                                <li><a href="{{ url('/') }}" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-user mR-10"></i> <span>Profile</span></a></li>
+                                <li><a href="{{ url('email') }}" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-email mR-10"></i> <span>Messages</span></a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-power-off mR-10"></i> <span>Logout</span></a></li>
+                                <li><a href="{{ url('/') }}" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-power-off mR-10"></i> <span>Logout</span></a></li>
                             </ul>
                         </li>
                     </ul>
