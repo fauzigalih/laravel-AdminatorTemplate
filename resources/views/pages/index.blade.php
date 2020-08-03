@@ -429,7 +429,7 @@
                     <div class="bgc-grey-200 p-20 gapY-15">
                         <div class="peers fxw-nw">
                             <div class="peer mR-20">
-                                <img class="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+                                {{ HTML::image('https://randomuser.me/api/portraits/men/11.jpg', '...', ['class' => 'w-2r bdrs-50p']) }}
                             </div>
                             <div class="peer peer-greed">
                                 <div class="layers ai-fs gapY-5">
@@ -471,7 +471,7 @@
                         </div>
                         <div class="peers fxw-nw ai-fe">
                             <div class="peer ord-1 mL-20">
-                                <img class="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+                                {{ HTML::image('https://randomuser.me/api/portraits/men/12.jpg', '...', ['class' => 'w-2r bdrs-50p']) }}
                             </div>
                             <div class="peer peer-greed ord-0">
                                 <div class="layers ai-fe gapY-10">
